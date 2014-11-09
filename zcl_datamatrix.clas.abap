@@ -8,7 +8,7 @@ public section.
 *"* do not include other source files here!!!
 
   types:
-    T_TEXT3 type C length 3 .
+    T_TEXT3 type SO_TEXT003.
 
   class-methods MATRIX
     importing
