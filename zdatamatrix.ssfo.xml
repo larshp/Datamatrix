@@ -2,7 +2,7 @@
 <sf:SMARTFORM xmlns:sf="urn:sap-com:SmartForms:2000:internal-structure" xmlns="urn:sap-com:sdixml-ifr:2000">
  <HEADER>
   <FORMNAME>ZDATAMATRIX</FORMNAME>
-  <CAPTION>New Form</CAPTION>
+  <CAPTION>Datamatrix</CAPTION>
   <MASTERLANG>E</MASTERLANG>
   <LANGVECTOR>*</LANGVECTOR>
   <DEVCLASS></DEVCLASS>
