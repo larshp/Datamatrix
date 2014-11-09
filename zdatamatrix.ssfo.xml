@@ -302,30 +302,30 @@
                      </item>
                     </PLIST>
                     <CODE>
-                     <item>  DATA: lv_matrix TYPE char100.</item>
+                     <item>DATA: lv_matrix TYPE char100.</item>
                      <item/>
-                     <item>  FIELD-SYMBOLS: &lt;lt_tab&gt;     TYPE tsftabdef,</item>
-                     <item>                 &lt;ls_tab&gt;     LIKE LINE OF &lt;lt_tab&gt;,</item>
-                     <item>                 &lt;ls_ltype&gt;   LIKE LINE OF &lt;ls_tab&gt;-tltype,</item>
-                     <item>                 &lt;ls_colinfo&gt; LIKE LINE OF &lt;ls_ltype&gt;-tcolinfo,</item>
-                     <item>                 &lt;ls_border&gt;  LIKE LINE OF &lt;ls_colinfo&gt;-borders.</item>
+                     <item>FIELD-SYMBOLS: &lt;lt_tab&gt;     TYPE tsftabdef,</item>
+                     <item>&lt;ls_tab&gt;     LIKE LINE OF &lt;lt_tab&gt;,</item>
+                     <item>&lt;ls_ltype&gt;   LIKE LINE OF &lt;ls_tab&gt;-tltype,</item>
+                     <item>&lt;ls_colinfo&gt; LIKE LINE OF &lt;ls_ltype&gt;-tcolinfo,</item>
+                     <item>&lt;ls_border&gt;  LIKE LINE OF &lt;ls_colinfo&gt;-borders.</item>
                      <item/>
-                     <item>  lv_matrix = zcl_datamatrix=&gt;matrix( iv_text ).</item>
+                     <item>lv_matrix = zcl_datamatrix=&gt;matrix( iv_text ).</item>
                      <item/>
-                     <item>  ASSIGN (&apos;(SAPLSTXBC)TABDEFS&apos;) TO &lt;lt_tab&gt;.</item>
+                     <item>ASSIGN (&apos;(SAPLSTXBC)TABDEFS&apos;) TO &lt;lt_tab&gt;.</item>
                      <item/>
-                     <item>  LOOP AT &lt;lt_tab&gt; ASSIGNING &lt;ls_tab&gt;.</item>
-                     <item>    LOOP AT &lt;ls_tab&gt;-tltype ASSIGNING &lt;ls_ltype&gt;.</item>
-                     <item>      LOOP AT &lt;ls_ltype&gt;-tcolinfo ASSIGNING &lt;ls_colinfo&gt;.</item>
-                     <item>        LOOP AT &lt;ls_colinfo&gt;-borders ASSIGNING &lt;ls_border&gt;.</item>
-                     <item>          IF lv_matrix(1) = &apos;0&apos;.</item>
-                     <item>            CLEAR: &lt;ls_border&gt;-intensity.</item>
-                     <item>          ENDIF.</item>
-                     <item>          lv_matrix = lv_matrix+1.</item>
-                     <item>        ENDLOOP.</item>
-                     <item>      ENDLOOP.</item>
-                     <item>    ENDLOOP.</item>
-                     <item>  ENDLOOP.</item>
+                     <item>LOOP AT &lt;lt_tab&gt; ASSIGNING &lt;ls_tab&gt;.</item>
+                     <item>LOOP AT &lt;ls_tab&gt;-tltype ASSIGNING &lt;ls_ltype&gt;.</item>
+                     <item>LOOP AT &lt;ls_ltype&gt;-tcolinfo ASSIGNING &lt;ls_colinfo&gt;.</item>
+                     <item>LOOP AT &lt;ls_colinfo&gt;-borders ASSIGNING &lt;ls_border&gt;.</item>
+                     <item>IF lv_matrix(1) = &apos;0&apos;.</item>
+                     <item>CLEAR: &lt;ls_border&gt;-intensity.</item>
+                     <item>ENDIF.</item>
+                     <item>lv_matrix = lv_matrix+1.</item>
+                     <item>ENDLOOP.</item>
+                     <item>ENDLOOP.</item>
+                     <item>ENDLOOP.</item>
+                     <item>ENDLOOP.</item>
                     </CODE>
                     <T_CAPTION>
                      <item>
