@@ -1,4 +1,4 @@
-[![abaplint](http://abaplint.org/badges/larshp/Datamatrix)](http://abaplint.org/project/larshp/Datamatrix)
+[![abaplint](https://abaplint.org/badges/larshp/Datamatrix)](https://abaplint.org/project/larshp/Datamatrix)
 
 Datamatrix
 ==========
